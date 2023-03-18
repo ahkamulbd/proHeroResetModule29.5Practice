@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-4xl font-bold text-emerald-400 text-center mb-5">Money Master</h1>
+    </header>
+    <main>
+        <section class="bg-gray-200 text-center py-5">
+            <h3 class="text-3xl text-semibold mb-3">Income:</h3>
+            <div class="mb-5">
+                <span class="text-2xl text-semibold mr-3">Income:</span>
+                <input type="text" value="">
+            </div>
+            <h3 class="text-3xl text-semibold mb-3">Expenses:</h3>
+            <div>
+                <div>
+                    <span class="text-2xl text-semibold mb-3 mr-3">Food:</span>
+                    <input id="food-expense" type="text" value="">
+                </div>
+                <div>
+                    <span class="text-2xl text-semibold mb-3 mr-3">Rent:</span>
+                    <input id="rent-expense" type="text" value="">
+                </div>
+                <div>
+                    <span class="text-2xl text-semibold mb-3 mr-3">Cloth:</span>
+                    <input id="cloth-expense" type="text" value="">
+                </div>
+            </div>
+            <button id="calculate-money"
+                class="bg-blue-600 text-white text-2xl px-4 py-3 my-4 rounded-lg">Calculate</button>
+            <h3 class="text-3xl text-semibold mb-3">Total Expenses: <span id="total-expense"></span></h3>
+            <h3 class="text-3xl text-semibold mb-3">Balances: <span></span></h3>
+            <div class="my-5">
+                <span class="text-2xl text-semibold mb-3 mr-3">Save:</span>
+                <input type="text">
+                <span class="text-2xl text-semibold mb-3 mr-3">%</span>
+                <button class="bg-blue-600 text-white text-2xl px-12 py-3 my-4 rounded-lg">Save</button>
+            </div>
+            <h3 class="text-3xl text-semibold mb-3">Saving Amount: <span></span></h3>
+            <h3 class="text-3xl text-semibold mb-3">Remaining Balance: <span></span></h3>
+        </section>
+    </main>
+
+    <script src="js/count.js"></script>
+
+</body>
+
+</html>
